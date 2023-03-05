@@ -1,0 +1,21 @@
+/*This chapter covers:- 
+    (i) Methods to specify colors (RGB values, Hex code, Color name)
+    (ii) Properties like color, background-color, opacity, rgba
+    (iii) HSL Colors
+*/
+
+
+/* Specifying color by color name */
+h1 {color: darkcyan;}
+/* Specifying color by hex code */
+h2 {color: #ee3e80;}
+/*Specifying color by RGB values */
+p {color: rgb(100, 100, 90); }
+/*Specifying Opacity*/
+p.opac_prop {color:chocolate; opacity: 0.4;}
+/*Opacity Using RGBA values*/
+p.rgba {color: rgba(150, 50, 50, 0.5);}
+/*HSL Colors*/
+h3 {color: hsl(230, 100%, 70%);}
+/*Color using HSLA*/
+#hsla {color: hsla(0, 0%, 0%, 0.6);}

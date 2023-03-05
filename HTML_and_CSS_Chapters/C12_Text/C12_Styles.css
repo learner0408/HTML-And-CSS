@@ -1,0 +1,67 @@
+/* This chapter deals with styles related to Text and covers the following contents:-
+    (i) font-family
+    (ii) font-sizes
+    (iii) font-face
+    (iv) font-weight
+    (v) font-style
+    (vi) text-transform
+    (vii) text-decoration
+    (viii) line-height
+    (ix) letter-spacing
+    (x) word-spacing
+    (xi) text-align
+    (xii) vertical-align
+    (xiii) text-indent
+    (xiv) text-shadow
+    (xv) Pseudo-elements (:first-line, :first-letter)
+    (xvi) Pseudo-classes (:link,:visited,:hover,:active)
+*/
+body {background-color: rgb(255, 217, 160);}
+/* Setting Font Type and Font-Size */
+h1 {font-family: Ananda-Black, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;}
+p.parafont {
+    font-family: Georgia, Times, serif;
+    font-size: 16px;}
+/* Using font-face to add more fonts */
+@font-face {
+    font-family: 'Ananda-Black';
+    src: url('ananda-black-font/AnandaBlack.ttf');
+}
+/* Using the Ananda Black Font Type */
+/* Using font-weight and font-style */
+/* Using text-indent */
+#ananda {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 18px;
+    font-weight:bold;
+    font-style: italic;
+    text-indent: 0.7em;}
+/* Using text-transform to set Uppercase or Lowercase */
+/* Using letter-spacing */
+#one {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;}
+/* Using text-decoration to set underline, overline, lin-through etc */
+#two {text-decoration:underline;}
+/* Applying line height for list */
+ul {line-height: 1.5em;}
+/* vertical-align can be used to align text vertically relative to image or in a table */
+
+/* Using text-shadow to apply a grey shadow over text */
+#three {text-shadow: 1.2px 1.2px grey ;}
+
+/* Using Pseudo-element */
+#four::first-letter {
+    font-weight: bold;
+    font-size: 150%;}
+
+/* Styling Links */
+
+
+a:link {color: deeppink;text-decoration: none;}
+a:visited {color: black;}
+a:hover {color: deepskyblue;
+    text-decoration: underline;}
+a:active {color: brown;}

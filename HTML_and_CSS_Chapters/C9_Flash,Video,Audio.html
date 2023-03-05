@@ -1,0 +1,48 @@
+<!--This chapter contain the following content:-
+    (i) Adding a Flash movie to your Web Page
+    (ii) Adding a Flash video to your Web Pages
+    (iii) Using <video> to add Video to your Web Page
+    (iv) Multiple Video Sources
+    (v) Adding Flash MP3 player
+    (vi) Using HTML5 Audio Tag
+    (vii) Using Multiple Audio Sources
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Learning Flash,Video and Audio</title>
+    </head>
+    <body>
+        <h1>Welcome to Chapter-9</h1>
+        <h2>Flash,Video and Audio</h2>
+        <!--Here will come the code for: Adding a Flash movie to your Web Page -->
+
+        <!--Here will come the code for: Adding a Flash video to your Web Pages-->
+
+        <!--Adding video using <video> tag-->
+        <p>
+            <h3>Pupply playing in the snow:</h3>
+            <video src="C9_Assets/Videos/puppy.mp4" width="350" height="200" poster="C9_Assets/Images/puppy.jpg"
+            controls loop preload="metadata"> A video of puppy playing in snow.</video>
+        </p>
+        <!--Multiple Video Sources-->
+        Multiple video sources example:- <br />
+        <video poster="C9_Assets/Images/puppy.jpg" width="350" controls preload="none" loop>
+            <source src="C9_Assets/Videos/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+            <source src="C9_Assets/Videos/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+            <p>A video of a puppy playing in the snow.</p>
+        </video>
+        <br /><br />
+        <!--Here will come the code for adding Flash MP3 player-->
+
+        <!--Using HTML5 Audio tag-->
+        <p>Beautiful Music-</p>
+        <audio src="C9_Assets/Audio/beautiful-string-music-23519.mp3" controls loop preload="auto"></audio>
+        <br /><br/>
+        <!--Using Multiple audio sources-->
+        Play in multiple browsers:-<br /><audio controls autoplay>
+            <source src="C9_Assets/Audio/test-audio.mp3">
+            <source src="C9_Assets/Audio/test-audio.ogg"></audio>
+    </body>
+</html>

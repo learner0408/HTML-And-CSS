@@ -1,0 +1,62 @@
+<!--This chapter contain the following contents:-
+    (i) Links to other websites(Using Absolute URLs)
+    (ii) Links to webpages of same site(Using Relative URLs)
+    (iii) Email Links
+    (iv) Opening links in new window (using target=_blank attribute)
+    (v) Linking to specific part of the Same web page
+    (vi) Linking to specific part of the different web Page
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Links</title>
+    </head>
+    <body>
+        <h1>Welcome to Chapter-4</h1>
+        <h2>Links</h2>
+        <!--Links to other websites-->
+        <p id="movie_reviews">
+            Movie Reviews:-
+            <ul>
+                <li><a href="http://www.empireonline.com">Empire</a></li>
+                <li><a href="http://www.rottentomatoes.com">Rotten Tomatoes</a></li>
+                <li><a href="http://www.variety.com">Variety</a></li>
+            </ul>
+        </p>
+        <!--Links to webpages of same site-->
+        <p id="HTML_chapters">
+            Links to webpages:-
+            <ul>
+                <li><a href="C1_Structure.html">Structure</a></li>
+                <li><a href="C2_Text.html">Text</a></li>
+                <li><a href="C3_Lists.html">Lists</a></li>
+            </ul>
+        </p>
+        <!--Email Links-->
+        <p id="email_link">
+            Email to Ankur:-
+            <a href="mailto:bhankur8@gmail.com">Email Ankur</a>
+        </p>
+        <!--Opening Links in new window-->
+        <p id="imbd_in_new_window">
+            <a href="http://www.imdb.com" target="_blank">IMDB</a> (opens in new window)
+        </p>
+        <!--Linking to specific part of the Same Page-->
+        <p>
+            Link to specific part of current Web page
+            <ul>
+                <li><a href="#movie_reviews">Movie Reviews</a></li>
+                <li><a href="#HTML_chapters">HTML Chapters</a></li>
+                <li><a href="#email_link">EmailTo</a></li>
+            </ul>
+        </p>
+        <!--Linking to specific part of a different web page-->
+        <p>
+            Link to specific part of different Web page
+            <ul>
+                <li><a href="C3_Lists.html/#science">Scientific Terms</a></li>
+            </ul>
+        </p>
+    </body>
+</html>
