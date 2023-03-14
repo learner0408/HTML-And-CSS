@@ -1,0 +1,92 @@
+/* In this chapter we will be learning about styling of Boxes and cover the following contents:-
+    (i) Box Dimensions (Height, Width)
+    (ii) Min-Width, Max-Width
+    (iii) Min-Height, Max-Height
+    (iv) Overflow
+    (v) Border-Width
+    (vi) Border-Style
+    (vii) border-color
+    (viii) border (Shorthand representation to specify width,style and color of border)
+    (ix) padding
+    (x) margin
+    (xi) Centering Content
+    (xii) display (Converting inline elements to block elements and vice-versa)
+    (xiii) Visibility
+    (xiv) border-image
+    (xv) box-shadow
+    (xvi) border-radius (circular and elliptical)
+
+*/
+
+#heading {text-align: center;}
+
+/*Adjusting Box Dimensions*/
+div {width: 700px;
+    height: 50px;
+    background-color:black;}
+div>p {width: 90%;
+    height: 80%;
+    background-color: darkorange;}
+
+/* Specifying min-width,min-height,max-width,max-height which the content inside the box can take.
+    It also contain the property overflow which specify what to do if the conntent  inside the box 
+    is taking more space than specified. */
+li {
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    overflow: scroll;
+}
+/* Specifying 1. Padding 2. border-width 3. border-style 4. border-color 5. margin */
+p.p1 {
+    padding: 10px;
+    border-width: 5px;
+    border-style: outset;
+    width: 500px;
+    margin: 5px;
+}
+
+p.p2 {
+    margin: 5px;
+    padding: 10px;
+    border: 5px outset lightskyblue;
+    padding: 10px;
+    width: 500px;
+}
+
+/* Centering the content by setting leaft and right margin to auto */
+p.p3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 5px outset greenyellow ;
+    width: 500px;
+    text-align: center;
+}
+
+/* Display is used to convert block type elements to inline elements
+   visibility is used to hide an element */
+li.items {
+    margin: 5px;
+    display: inline;
+}
+
+#li3 {
+    visibility: hidden;
+}
+/* Applying border-image */
+/* IMPORTANT - Check why it isn't working on current browser */
+p.p4 {
+    -webkit-border-image: url("Assets/boundary.jpeg") 10 10 10 10 stretch;
+    border-image:url("Assets/boundary.jpeg") 10 10 10 10 stretch;
+}
+
+/* Applying box-shadow */
+p.p3 {
+    box-shadow: 5px 5px darkgreen ;
+}
+
+/* Applying Border Radius */
+p.p2{border-radius: 10px;}
