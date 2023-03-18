@@ -1,0 +1,195 @@
+/* In this chapter we will cover the following CSS properties related to Lists, Tables, Forms:-
+List Properties
+   (i) list-style-type (Bullet Point Styles)
+   (ii) list-style-image (Images For Bullets)
+   (iii) list-style-position (Positioning the Marker)
+   (iv) list-style (Shorthand notation for different properties of list-style)
+Table Properties
+    (i) width
+    (ii) padding
+    (iii) text-transform
+    (iv) letter-spacing, font-size
+    (v)border-top, border-bottom
+    (vi) text-align
+    (vii) baackground-color
+    (viii) :hover
+    (ix) empty-cells
+    (x) border-spacing, border-collapse
+Form Properties:-
+    (i) Styling Text Inputs
+        A. font-size
+        B. color
+        C. background-color
+        D. border
+        E. border-radius
+        F. :focus, :hover
+        G. background-image
+        H. background-repeat
+        I. background-position
+
+    (ii) Styling Submit Buttons
+        A. color
+        B. text-shadow
+        C. border
+        D. background-color
+        E. background (gradient effect)
+    
+    (iii) Styling fieldsets and legends
+        A. width
+        B. color
+        C. background-color
+        D. border
+        E. border-radius
+        F. padding
+    
+    (iv) Aligning Form Controls
+
+    (v) Cursor Styles
+*/
+
+
+/* These are Lists Styles */
+
+#page_heading {
+    text-align: center;
+}
+/* List Style Type */
+#ol1 {
+    list-style-type: lower-roman;
+}
+
+/* Using Images for Bullets using list-style-image */
+#ul1 {
+    list-style-image: url("Assets/star.png");
+}
+li {
+    margin: 5px;
+}
+/* Using list-style-position */
+#ul2 {
+    width: 150px;
+    list-style-type: square;
+    list-style-position: outside;
+}
+#outside_case {
+    list-style-position: inside;
+}
+/* Using short-hand notation for list-style */
+#ul3 {
+    width: 200px;
+    list-style: inside disc;
+}
+
+/* These are Table Styles */
+
+/* Applying Table Width */
+table {
+    width: 550px;
+}
+/* Applying padding b/w cell content and cell border */
+th, td {
+    padding: 7px 10px 10px 10px;
+}
+/* Applying background-color in a row */
+tr.even {
+    background-color: lightgrey;
+}
+/* Applying border properties, text allignment in cell and text-transform */
+th{
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    border-top: 1px solid darkgray;
+    font-size: 90%;
+    text-align: left;
+}
+.money {
+    text-align: right;
+}
+tr:hover {
+    background-color: #c3e6e5;
+}
+/* Applying space b/w border of 2 cells and sharing border boundary for 2 cells */
+table.t2 {
+    width: 200px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+/* empty-cells property to show if the border of an empty cell should be visible or not */
+td.num {
+    border: 2px solid black;
+    margin: 4px;
+    empty-cells: hide;
+    
+}
+
+/* These are Form Styles */
+
+/* Styling input with font-size, margin-bottom, padding, border-radius, background-color, background-repeat, background-position */
+input.first {
+    font-size: 90%;
+    margin-bottom: 10px ;
+    padding: 5px 5px 5px 30px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+/* Change in background color when user hover the input. Other properties can also we added when the user hover like border */
+input:hover {
+    background-color: aliceblue;
+}
+/* Adding background image to the input */
+input#email {
+    background-image: url("Assets/email.png");
+}
+
+input#twitter {
+    background-image: url("Assets/twitter.png");
+}
+/* Styling the submit button using padding, color, text-shadow, background-color, background gradient color*/
+input#submit {
+    padding: 5px 10px 5px 10px;
+    color: #444444;
+    text-shadow: 0px 1px 1px rgb(30, 19, 19);
+    background-color: #b9e4e3;
+    background: -o-linear-gradient(top, #beeae9, #8acfce);
+}
+/* Styling fieldset with width, border, border-radius, padding, text-align */
+fieldset {
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+/* Styling legend with background-color, border, border-radius, padding, text-align and text-transform */
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+input#submit2 {
+    color: #dcdcdc;
+    background-color: #444444;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: right;
+    
+    
+}
+/* Using the div element style to move the box towards right */
+#newsletter-submit {
+    text-align: right;
+}
+
+/* Aligning Form Controls*/
+/* This is done by specifying width property of all elements, setting float to left, text-align to right*/
+
+/* Deciding what shape/picture of cursor to show when it is pointed at a link */
+a {
+    cursor: pointer;
+}

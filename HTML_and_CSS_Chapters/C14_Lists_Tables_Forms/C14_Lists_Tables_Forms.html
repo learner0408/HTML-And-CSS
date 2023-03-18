@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Styles related to Lists,Tables,Forms</title>
+        <link href="C14_Styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="page_heading">Welcome to Chapter-14</h1>
+        <h2>These are the types of list styles we can use for Unordered Lists:-</h2>
+        <ol id="ol1" class="ordlists">
+            <li>none</li>
+            <li>disc</li>
+            <li>circle</li>
+            <li>square</li>
+        </ol>
+        <h2>Poems by Arthur Rimbaud:-</h3>
+        <ul id="ul1">
+            <li>Ophelia</li>
+            <li>To Music</li>
+            <li> A Dream For Water</li>
+            <li>Vowels</li>
+            <li>The Drunken Boat</li>
+        </ul>
+        <ul id="ul2">
+            <li id="outside_case">In this list item, we can see that the next line start from outside of the box of list item.</li>
+            <li>In this list item, we can see that the next line start from inside of the box of list item.</li>
+        </ul>
+        <h2>Quotes By Edgar Allan Poe</h2>
+        <ul id="ul3">
+            <li>I have great faith in fools; self-confidence my friends call it.</li>
+            <li>All that we see or seem is but a dream within a dream.</li>
+            <li>I would define, in brief, the poetry of words
+                as the rhythmical creation of Beauty.</li>
+        </ul>
+        <h2>Auctions</h2>
+        <table>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Reserve Price</th>
+                <th>Current Paid</th>
+            </tr>
+            <tr>
+                <td>E.E Cummings</td>
+                <td>Tulips and Chimneys</td>
+                <td class="money">$2000.0</td>
+                <td class="money">$2642.5</td>
+            </tr>
+            <tr class="even">
+                <td>Charles'D Orleans</td>
+                <td>Poems</td>
+                <td class="money"></td>
+                <td class="money">$5866.0</td>
+            </tr>
+            <tr>
+                <td>T.S Elliot</td>
+                <td>Poems 1909-45</td>
+                <td class="money">$1245.5</td>
+                <td class="money">$8745.0</td>
+            </tr>
+        </table>
+        <h2>Numbers</h2>
+        <table class="t2">
+            <tr>
+                <td class="num">1</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td class="num">3</td>
+                <td class="num"></td>
+            </tr>
+        </table>
+
+        <h2>User Info</h2>
+        <div>
+            <label for="name" class="title">Name:</label>
+            <input type="text" class="first" name="name" />
+        </div>
+        <div>
+            <label for="email" class="title">Email:</label>
+            <input type="email" id="email" class="first" name="email">
+        </div>
+        <div>
+            <label for="twitter" class="title">Twitter:</label>
+            <input type="url" id="twitter" class="first" name="twitter">
+        </div>
+        <label><input type="submit" value="Submit" id="submit" class="first"/></label>
+
+        <fieldset>
+            <legend>Newsletter</legend>
+            <label>Name: <input type="text" name="name1" class="first"></label><br/>
+            <label>Email: <input type="email" name="email1" class="first"></label><br/>
+            <div id="newsletter-submit"><input type="submit" value="Subscribe" id="submit2"></div>
+        </fieldset>
+        <br/>
+        <div>
+            <h3>Cursor</h3>
+            <a href="../C10_Introducing CSS/C10_IntroducingCSS.html">Introducing CSS</a>
+        </div>
+    </body>
+</html>
