@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Layout using CSS</title>
+        <link href="C15_Styles.css" rel="stylesheet" type="text/css">
+        <!-- Using Multiple Stylesheet -->
+        <link href="../code/css/960_12_col.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Welcome to Chapter-15</h1>
+        <h2 id="black-holes">Black Holes</h2>
+        <p class="normal">
+            Don't let the name fool you: a black hole is anything but empty space. Rather, it is a great amount of matter packed into a very small area - think of a star ten times more massive than the Sun squeezed into a sphere approximately the diameter of New York City. The result is a gravitational field so strong that nothing, not even light, can escape. In recent years, NASA instruments have painted a new picture of these strange objects that are, to many, the most fascinating objects in space.
+        </p>
+        <p class="relative normal">
+            The idea of an object in space so massive and dense that light could not escape it has been around for centuries. Most famously, black holes were predicted by Einstein's theory of general relativity, which showed that when a massive star dies, it leaves behind a small, dense remnant core. If the core's mass is more than about three times the mass of the Sun, the equations showed, the force of gravity overwhelms all other forces and produces a black hole.
+        </p>
+        <p class="normal">
+            Scientists can't directly observe black holes with telescopes that detect x-rays, light, or other forms of electromagnetic radiation. We can, however, infer the presence of black holes and study them by detecting their effect on other matter nearby. If a black hole passes through a cloud of interstellar matter, for example, it will draw matter inward in a process known as accretion. A similar process can occur if a normal star passes close to a black hole. In this case, the black hole can tear the star apart as it pulls it toward itself. As the attracted matter accelerates and heats up, it emits x-rays that radiate into space. Recent discoveries offer some tantalizing evidence that black holes have a dramatic influence on the neighborhoods around them - emitting powerful gamma ray bursts, devouring nearby stars, and spurring the growth of new stars in some areas while stalling it in others.
+        </p>
+        <hr/>
+        <h2 class="absolute">Nebula</h2>
+        <p class="normal">A nebula is a distinct luminescent part of interstellar medium, which can consist of ionized, neutral or molecular hydrogen and also cosmic dust. Nebulae are often star-forming regions, such as in the "Pillars of Creation" in the Eagle Nebula. In these regions, the formations of gas, dust, and other materials "clump" together to form denser regions, which attract further matter, and eventually will become dense enough to form stars. The remaining material is then thought to form planets and other planetary system objects.</p>
+        <blockquote>
+            "Life is like riding a bicycle.To keep your balance you must keep moving." - Albert Einstein
+        </blockquote>
+        <p class="normal">Most nebulae are of vast size; some are hundreds of light-years in diameter. A nebula that is visible to the human eye from Earth would appear larger, but no brighter, from close by.[6] The Orion Nebula, the brightest nebula in the sky and occupying an area twice the angular diameter of the full Moon, can be viewed with the naked eye but was missed by early astronomers.[7] Although denser than the space surrounding them, most nebulae are far less dense than any vacuum created on Earth - a nebular cloud the size of the Earth would have a total mass of only a few kilograms.</p>
+        <br/> <br/> 
+        <hr />
+        <h2>White Dwarf</h2>
+        <div class="white-dwarf">
+            <p id="one" >A white dwarf is what stars like the Sun become after they have exhausted their nuclear fuel. Near the end of its nuclear burning stage, this type of star expels most of its outer material, creating a planetary nebula.</p>
+        <p id="two" >This core becomes a very hot white dwarf, with a temperature exceeding 100,000 Kelvin. Unless it is accreting matter from a nearby star (see Cataclysmic Variables), the white dwarf cools down over the next billion years or so.</p>
+        <p id="three" > A typical white dwarf is half as massive as the Sun, yet only slightly bigger than Earth. An Earth-sized white dwarf has a density of 1 x 109 kg/m3. Earth itself has an average density of only 5.4 x 103 kg/m3. That means a white dwarf is 200,000 times as dense. This makes white dwarfs one of the densest collections of matter, surpassed only by neutron stars.</p>
+        <p id="four" >
+            Many nearby, young white dwarfs have been detected as sources of soft, or lower-energy, X-rays. Recently, soft X-ray and extreme ultraviolet observations have become a powerful tool in the study the composition and structure of the thin atmosphere of these stars.
+        </p>
+        <p id="five" class="clear">Because a white dwarf is not able to create internal pressure (e.g. from the release of energy from fusion, because fusion has ceased), gravity compacts the matter inward until even the electrons that compose a white dwarf's atoms are smashed together. In normal circumstances, identical electrons (those with the same "spin") are not allowed to occupy the same energy level. Since there are only two ways an electron can spin, only two electrons can occupy a single energy level. </p>
+        </div>
+        
+        <hr />
+        <div class="neutron-stars">
+            <div class="col1of2">
+                <h2>Neutron Stars</h2>
+                <p>
+                Neutron stars are formed when a massive star runs out of fuel and collapses. The very central region of the star – the core - collapses, crushing together every proton and electron into a neutron. If the core of the collapsing star is between about 1 and 3 solar masses, these newly-created neutrons can stop the collapse, leaving behind a neutron star.
+                </p>
+            </div>
+            <div class="col2of2">
+                <h2>Pulsars</h2>
+                <p>
+                    Pulsars are rotating neutron stars observed to have pulses of radiation at very regular intervals that typically range from milliseconds to seconds. Pulsars have very strong magnetic fields which funnel jets of particles out along the two magnetic poles. These accelerated particles produce very powerful beams of light.
+                </p>
+            </div>
+        </div>
+        
+        <hr/>
+        
+        <h2>Example of Fixed Width/Liquid Layout</h2>
+        <div class="fixed-width-body liquid-body container_12 clearfix">
+            <div id="header" class="grid_12">
+                <h3>Logo</h3>
+                <div id="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div id="feature" class="grid_12">
+                    <p>Features</p>
+                </div>
+                <div class="article column1 grid_4">
+                    <p>Column One</p>
+                </div>
+                <div class="article column2 grid_4">
+                    <p>Column Two</p>
+                </div>
+                <div class="article column3 grid_4">
+                    <p>Column Three</p>
+                </div>
+            </div>
+            <div id="footer" class="grid_12">
+                <p>&copy; Copyright 2011</p>
+            </div>
+        </div>
+
+        
+        
+    </body>
+</html>

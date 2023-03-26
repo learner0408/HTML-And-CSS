@@ -1,0 +1,207 @@
+/* In this chapter, we are going to cover CSS properties related to the Layout of elements on the web page, including positioning
+ of elements, adjusting layout for various devices etc. These properties will be covered :-
+    (i) position:static (Normal Flow)
+    (ii) position:relative (Relative Positioning)
+    (iii) position:absolute (Absolute Positioning)
+    (iv) position:fixed (Fixed Positioning)
+    (v) z-index (Deciding which content appear on top of which element for overlapping elements )
+    (vi) float (Surrounding text float arround the element with float)
+    (vii) clear (here no element,within the same containing element, should touch the left or right hand side of the box)
+    (viii) Problem where containing element containing only contains float element and its solution using overflow and width property
+    (ix) Creating Multi-Column layout with Floats (Using width, float and margin)
+    (x) Fixed Width Layout (Specifying width of elements using pixels)
+    (xi) Liquid Layout (Specifying width of elements using % or em )
+    (xii) Grid Based Layout using 960.GS
+    (xiii) Multiple Stylesheets:- 1. @import 2. link
+
+
+ */
+
+ /* Using import to add additional stylesheet */
+ @import url("../code/css/960_12_col.css");
+
+ h1 {
+    text-align: center;
+    background-color: lightgrey;
+ }
+ /* Specifying the position of paragraph as static, but it is by default. */
+ p.normal{
+    width: 950px;
+    position:static;
+ }
+/* Specifying the relative positioning of paragraph */
+ p.relative {
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+ }
+#black-holes {
+   margin-top: 100px;
+}
+
+/* Specifying absolute positioning for h2 heading */
+ h2.absolute {
+   
+   position: absolute;
+   right: 100px;
+ }
+/* Specifying fixed positioning for the top of page */
+ h1 {
+   position: fixed;
+   top: 10px;
+   padding: 5px 10px;
+ }
+
+ h2 {
+   background-color: antiquewhite;
+   padding: 5px 10px;
+   width: fit-content;
+   text-align: center;
+ }
+/* Applying z-index to decide which content appear in the front and which in the back */
+ h1 {
+   z-index: 10;
+ }
+/* Applying float property on blockquote*/
+ blockquote {
+   width: 275px;
+   float: right;
+   font-style: italic;
+   font-size: 130%;
+   border-top: 1px solid #665544;
+   border-bottom: 1px solid #665544;
+   margin: 0px 0px 10 px 10px;
+   padding: 10px;
+ }
+
+ /* Placing boxes side by side using float property */
+ #one {
+   width: 230px;
+   float: left ;
+   margin: 5px;
+   padding: 10px;
+   background-color: #efefef;
+ }
+
+ #two {
+   width: 230px;
+   float: left;
+   margin: 5px;
+   padding: 10px;
+   background-color: #efefef;
+ }
+
+ #three {
+   width: 230px;
+   float: left;
+   margin: 5px;
+   padding: 10px;
+   background-color: #efefef;
+ }
+
+ #four {
+   width: 230px;
+   float: left;
+   margin: 5px;
+   padding: 10px;
+   background-color: #efefef;
+ }
+
+ #five {
+   width: 230px;
+   float: left;
+   margin: 5px;
+   padding: 10px;
+   background-color: #efefef;
+ }
+/*Applying clear property to specify that no element should sit on the left side of the box with class clear */
+ .clear {
+   clear: left;
+ }
+/* Solution of containing element only contains floated element using overflow and width */
+ div.white-dwarf, div.neutron-stars {
+   border: 1px solid #665544;
+   overflow: auto;
+   width: 100%;
+ }
+
+ .col1of2{
+   float:left;
+   width: 400px;
+   margin: 10px;
+   
+ }
+ .col2of2 {
+   float: right;
+   width: 400px;
+   margin: 10px;
+ }
+
+ /* Styling for Fixed Width Layout
+ .fixed-width-body {
+   width: 960px;
+   margin: 0 auto;
+ }
+
+ #content {
+   overflow: auto;
+   height: 100%;
+ }
+ #nav, #feature, #footer {
+   background-color: #efefef;
+   padding: 10px;
+   margin: 10px;
+ }
+ .column1, .column2, .column3 {
+   width: 300px;
+   float: left;
+   background-color: #efefef;
+   margin: 10px;
+ }
+ li {
+   display: inline;
+   padding: 5px;
+ } */
+
+ /* Styling for Liquid Layout
+ .liquid-body {
+   width: 90%;
+   margin: 0 auto;
+ }
+ #content {overflow: auto;}
+ #nav, #feature, #footer {
+   margin: 1%;
+ }
+ .column1, .column2, .column3 {
+   width: 31.3%;
+   float: left;
+   margin: 1%;
+ }
+ .column3 {margin-right: 0%;}
+ li {
+   display: inline;
+   padding: 0.5em;
+ }
+ #nav, #footer {
+   background-color: #efefef;
+   padding: 0.5em 0;
+ }
+ #feature, .article {
+   height: 10em;
+   margin-bottom: 1em;
+   background-color: #efefef;
+ } */
+
+ /* Styling with 960.GS Grid Based Layout */
+ * {
+   font-family: Arial, Verdana, sans-serif; color: #665544;
+   text-align: center;}
+ #nav, #feature, .article, #footer {
+   background-color: #efefef;
+   margin-top: 20px;
+   padding: 10px 0px 5px 0px;}
+ #feature, .article {
+   height: 100px;}
+ li {
+   display: inline;
+   padding: 5px;}  
