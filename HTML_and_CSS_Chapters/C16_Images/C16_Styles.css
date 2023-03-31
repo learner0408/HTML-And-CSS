@@ -1,0 +1,117 @@
+/* In this chapter we are going to learn about various styling tools available for images in css. Here are the following:-
+    (i) Controlling sizes of images
+    (ii) Aigning Images (Using float)
+    (iii) Centering Images
+    (iv) background-image
+    (v) background-repeat (Which directions the background image should repeat)
+    (vi) background-attachment (Whether the background-image should move when user scroll)
+    (vii) background-position
+    (viii) background (Shorthand Notation)
+    (ix) Image Rollovers & Sprites
+    (x) Gradients (Using background-image)
+
+*/
+
+h1 {
+    text-align: center;
+}
+
+
+/* Setting size of images */
+img.large {
+    width: 400px;
+    height: 400px;
+}
+img.medium {
+    width: 200px;
+    height: 200px;
+}
+img.small {
+    width: 100px;
+    height: 100px;
+}
+
+/* Aligning Images left or right*/
+img.left-align {
+    float: left;
+    margin-right: 10px;
+}
+img.right-align {
+    float: right;
+    margin-left: 10px;
+}
+
+div{
+    height: 200px;
+}
+/* Centering Images*/
+img.center {
+    display: block;
+    margin: 0px auto;
+}
+/* Adding Background-Image*/
+.para-background {
+    background-image: url("Assets/pattern.gif");
+    color: white;
+    margin: 0px auto;
+}
+/* Setting background-repeat and background-attachement for background-image*/
+.header-background {
+    background-image: url("Assets/header.gif");
+    
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+/* Setting background with background-position using shorthand notation*/
+body {
+    background: url("Assets/tulip.gif") no-repeat fixed center top;
+}
+/* Applying Image Rollovers(changing the link style when user hover or click on it) and 
+    Sprites(When single image is used for different parts of interface) */
+a.button {
+    height: 36px;
+    display: inline-block;
+    background-image: url("Assets/button-sprite.jpg");
+    text-indent: -9999px;
+}
+
+a#add-to-basket {
+    width: 174px;
+    background-position: 0px 0px;
+}
+
+a#framing-options {
+    width: 210px;
+    background-position: -175px 0px;
+}
+
+a#add-to-basket:hover {
+    background-position: 0px -40px;
+}
+
+a#framing-options:hover {
+    background-position: -175px -40px;
+}
+
+a#add-to-basket:active {
+    background-position: 0px -80px;
+}
+
+a#framing-options:active {
+    background-position: -175px -80px;
+}
+
+/* Applying Gradients using background-image */
+#gradients {
+    height: 200px;
+    width: 400px;
+    /* Fallback Image
+    background-image: url("Assets/"); */
+    /* For Chrome browser 1+ */
+    background-image: -webkit-linear-gradient(linear, 0% 0%,0% 100%, from(#66cccc), to(#336666));
+    /* For Chrome browser 10+ */
+    background-image: -webkit-linear-gradient(#336666,
+    #66cccc);
+    /* For Opera */
+    background-image: -o-linear-gradient(#336666,#66cccc);
+}
