@@ -19,3 +19,5 @@ This contain the implementation of functions and attributes related to the follo
 14. CSS Lists, Tables, Forms
 15. CSS Layout
 16. CSS Images
+
+The book "HTML and CSS" is also present in the folder HTML_AND_CSS_Chapters
